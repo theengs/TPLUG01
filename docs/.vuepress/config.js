@@ -2,8 +2,8 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  title: 'Theengs',
-  description: 'Manufacturer agnostic open source set of solutions to decode BLE sensors',
+  title: 'Theengs Plug Quick Start Guide',
+  description: 'Smart plug, manufacturer agnostic BLE gateway and energy meter in one device',
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: ".apple-touch-icon.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"}],
@@ -18,7 +18,7 @@ module.exports = {
   ],
   themeConfig: {
     smoothScroll: true,
-    repo: 'theengs/home',
+    repo: 'theengs/TPLUG01',
     docsDir: 'docs',
     docsBranch: 'development',
     lastUpdated: 'Last Updated',

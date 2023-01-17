@@ -1,53 +1,50 @@
 ---
 home: true
-heroText: null
+heroText: Theengs plug quick start guide
 heroImage: logo-Theengs.png
-tagline: Manufacturer agnostic BLE sensors applications and gateways
-features:
-- title: Interoperability
-  details: From Home Assistant to ThingsBoard, Theengs is compatible with most of the IOT platforms and SmarHome controllers.
-- title: Expandability
-  details: Theengs can read broadcasted data from many sensors, and it is easy to add one, thanks to the use of a JSON based decoder.
-- title: Open source
-  details: Theengs is GPLv3 licensed so you can propose new features easily and have access to how the tools are built.
-- title: Local and cloud compatible
-  details: Theengs can run localy or connected to a cloud service. Your choice, not somebody else one.
-- title: Powerfull decoder
-  details: Theengs applications use one library to decode the sensors. Adding a device to the library makes it available for the whole ecosystem.
-- title: Compact
-  details: Theengs heart is developped in C++ and weight less than 1MB enabling to embed it into a wide range of boards from microcontrollers to computers.
+tagline: Smart plug, manufacturer agnostic BLE gateway and energy meter in one device.
 ---
 
-![Theengs ecosystem](./img/Theengs-ecosystem.jpg)
+[**Theengs Plug**](https://shop.theengs.io/products/theengs-plug-smart-plug-ble-gateway-and-energy-consumption) connects to an MQTT broker to be controlled and to push Bluetooth Low Energy sensors informations and power consumption.
 
-**Theengs** is available with the hardware below, they can work independently or together, following your requirements.
-
-## On a smartphone or tablet
-The [Mobile/Tablet Android and iOS/iPadOS application](https://app.theengs.io) enables to read the sensors data directly.
-
-![Theengs app](./img/Theengs-app-home-reduced-1280.png)
-
-It can act also as a BLEtoMQTT gateway.
-
-## On a microcontroller
-Theengs is used by [OpenMQTTGateway](https://docs.openmqttgateway.com), it can be installed [easily](https://docs.openmqttgateway.com/upload/web-install.html) on an ESP32 to act as a Bluetooth to MQTT gateway.
-
-
-<p align="center">
-  <img src="./img/Theengs-openmqttgateway.jpg">
+1. Plug the device into an outlet, a steady orange LED will switch ON.
+1. From your smartphone do a Wifi search and look for a network starting by `OMG_`
+<p align="left">
+  <img src="./img/Theengs-plug01-wifi.png">
 </p>
-
-## On a computer
-Alternatively Theengs can be used on computers and servers as a [python BLEtoMQTT gateway](https://gateway.theengs.io) for Raspberry Pi, Unix, or Windows,
-
-<p align="center">
-  <img src="./img/Theengs-gateway-raspberry-pi.jpg">
+1. Click on this network and enter the 8 last digits of the device MAC address, the device MAC address is printed on the side of it.
+Example for a MAC address `409151234678` the Wifi password will be `51234678`
+1. Depending on your smartphone a webpage will popup, if it doesn't pop up, click on the gear at the right of the Wifi netowrk 
+<p align="left">
+  <img src="./img/Theengs-plug01-wifi-manage-gear.png">
 </p>
+1. and click on "Manage router"
+<p align="left">
+  <img src="./img/Theengs-plug01-wifi-manage-router.png">
+</p>
+1. The web page will appear, click on "Configure Wifi"
+<p align="left">
+  <img src="./img/Theengs-plug01-wifi-manage-configure.png">
+</p>
+1. Enter the following parameters:
+* Select your Wifi Access Point (SSID) - compulsory
+* Enter your wifi password (Password) - compulsory
+* Enter your mqtt server - compulsory
+* Enter your mqtt port - compulsory
+* Enter your mqtt user - optional
+* Enter your mqtt password - optional
+* Select if your broker requires a secure connection, if yes you will need to copy and paste the certificates on the next fields
+* Modify the gateway name if you need
+* Modify the base topic if you need
+<p align="left">
+  <img src="./img/Theengs-plug01-wifi-manage-parameter.png">
+</p>
+8. Click on Save
 
-::: warning Note
-All product and company names are trademarks or registered trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
-:::
+Once connected properly the gateway LED should be green and blink blue when scanning.
 
-::: slot footer
-[GPLv3 Licensed](https://github.com/theengs/home/blob/main/LICENSE) | Copyright © 2022-present Theengs
+To use and integrate the plug with an Home Automation Controller you can switch to [OpenMQTTGateway documentation](https://docs.openmqttgateway.com/use/ble.html)
+
+::: tip
+If you are encountering issue with the plug, you can contact the support at the following email: [support@theengs.io](mailto:support@theengs.io)
 :::
