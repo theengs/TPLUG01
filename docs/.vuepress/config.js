@@ -30,6 +30,10 @@ module.exports = {
       { text: 'Gateway', link: 'https://gateway.theengs.io', target:'_self', rel:''},
       { text: 'Decoder', link: 'https://decoder.theengs.io', target:'_self', rel:''}
     ],
+    sidebar: [
+      ['/','Quick start 🏠'],
+      ['advanced/advanced','Advanced ✈️']
+  ]
   },
   plugins: [
     ['@vuepress/pwa', {
