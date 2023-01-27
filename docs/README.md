@@ -51,5 +51,5 @@ Once connected properly the gateway LED should be green and blink blue when scan
 To use and integrate the plug with an Home Automation Controller you can switch to [OpenMQTTGateway documentation](https://docs.openmqttgateway.com/use/ble.html)
 
 ::: tip
-If you are encountering issue with the plug, you can contact the support at the following email: [support@theengs.io](mailto:support@theengs.io)
+If you are encountering issue with the plug, you can contact the support at the following email: [support@theengs.io](mailto:florian@theengs.io)
 :::
