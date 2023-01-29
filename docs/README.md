@@ -7,7 +7,7 @@
 <p align="left">
   <img src="./img/Theengs-plug01-orange.png">
 </p>
-1. From your smartphone do a Wifi search and look for a network starting by `OMG_`
+1. From your smartphone do a Wifi search and look for a Wifi network starting by `OMG_`
 <p align="left">
   <img src="./img/Theengs-plug01-wifi.png">
 </p>
@@ -21,6 +21,13 @@ Example for a MAC address `409151234678` the Wifi password will be `51234678`
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-router.png">
 </p>
+
+::: tip
+If your smartphone disconnects from the plug Wifi network and reconnects automaticaly to your main Wifi, you can click on your main Wifi and choose "forget".
+This will keep the connection to the plug stable to reach the configuration. Once the configuration is done you can reconnect your smartphone to your main Wifi.
+Also if the plug is connected, and you are not seeing the configuration portal, you can access it through the web browser and the following ip address `192.168.4.1`
+:::
+
 1. The web page will appear, click on "Configure Wifi"
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-configure.png">
