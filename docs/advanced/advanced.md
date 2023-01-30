@@ -1,41 +1,43 @@
-# LED status
+# User guide
 
-## Steady orange
+## Led indicator
+
+### Steady orange
 The plug generated an Access Point for onboarding on a network
 <p align="left">
   <img src="./../img/Theengs-plug01-orange.png">
 </p>
 
-## Orange 5 seconds, off 5 seconds
+### Orange 5 seconds, off 5 seconds
 The plug is disconnected from the MQTT broker
 
-## Orange 2 seconds, off 2 seconds
+### Orange 2 seconds, off 2 seconds
 The plug is disconnected from the Wifi broker
 
-## Steady green
+### Steady green
 The plug is connected to the network and MQTT broker
 <p align="left">
   <img src="./../img/Theengs-plug01-green.png">
 </p>
 
-## Steady blue
+### Steady blue
 An update or an operation is in progress
 <p align="left">
   <img src="./../img/Theengs-plug01-blue.png">
 </p>
 
-## Flashing blue
+### Flashing blue
 Scan or communication in progress
 
-## Steady red for the power Led
+### Steady red for the power Led
 An overcurrent has been detected. The relay has been switched Off automatically
 <p align="left">
   <img src="./../img/Theengs-plug01-power-red.png">
 </p>
 
-# Modules and parameters
+## Modules and parameters
 
-## Home Assistant discovery convention
+### Home Assistant discovery convention
 The plug publishes its configuration and the detected BLE sensors to the broker following [Home Assistant discovery convention](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery). You will find the devices into Configuration->Devices menu with [Home Assistant](https://docs.openmqttgateway.com/integrate/home_assistant.html)
 
 <p align="left">
@@ -50,7 +52,7 @@ The plug publishes its configuration and the detected BLE sensors to the broker 
 The Home Assistant convention can also be used by other controllers to leverage automatic discovery.
 :::
 
-## Bluetooth gateway
+### Bluetooth gateway
 These [Bluetooth devices](https://docs.openmqttgateway.com/prerequisites/devices.html#for-ble-devices) will be detected, and their data will be published to the MQTT broker.
 ```
 home/112233445566/BTtoMQTT/AABBCCDDEEFF
@@ -61,7 +63,7 @@ For example with auto-discovery
   <img src="./../img/Theengs-Plug-Settings-HomeAssistant-3.png">
 </p>
 
-## RN8209 sensor 
+### RN8209 sensor 
 The plug will report voltage, current and power to the MQTT broker.
 ```
 home/112233445566/RN8209toMQTT
@@ -73,7 +75,7 @@ For example with auto-discovery
   <img src="./../img/Theengs-Plug-Settings-HomeAssistant-4.png">
 </p>
 
-## Actuator ONOFF
+### Actuator ONOFF
 You can control the relay with an MQTT command or with the button (if the plug is connected to an MQTT broker)
 
 Switch ON
@@ -87,14 +89,14 @@ home/C8F09EB61A44/commands/MQTTtoONOFF
 {"cmd":1}
 ```
 
-## Sensor GPIO
+### Sensor GPIO
 You can get notified with a press of the button
 ```
 home/112233445566/GPIOInputtoMQTT
 {"gpio":"LOW"}
 ```
 
-## Default parameters
+### Default parameters
 * BLE Time between scans: 100ms
 * BLE Scan duration: 3000ms
 * Connect to BLE devices deactivated
@@ -103,9 +105,8 @@ home/112233445566/GPIOInputtoMQTT
 
 The BLE parameters can be changed with the commands detailed into [BLE gateway usage](https://docs.openmqttgateway.com/use/ble.html).
 
-# Updating Theengs Plug
+## Updating Theengs Plug
 Theengs plug can benefit from Over The Air updates following these different methods:
 * From the WifiManager portal, by uploading a binary directly to the plug
 * From platformio if the plug is connected to the same Wifi as the programming computer
 * From an MQTT command to trigger the download of the firmware from a webserver
-
