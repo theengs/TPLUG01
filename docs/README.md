@@ -7,13 +7,15 @@
 <p align="left">
   <img src="./img/Theengs-plug01-orange.png">
 </p>
-1. From your smartphone do a Wifi search and look for a Wifi network starting by `OMG_`
+
+2. From your smartphone do a Wifi search and look for a Wifi network starting by `OMG_`
 <p align="left">
   <img src="./img/Theengs-plug01-wifi.png">
 </p>
-1. Click on this network and enter the 8 last digits of the device MAC address, the device MAC address is printed on the side of it.
+
+3. Click on this network and enter the 8 last digits of the device MAC address, the device MAC address is printed on the side of it.
 Example for a MAC address `409151234678` the Wifi password will be `51234678`
-1. Depending on your smartphone a webpage will popup, if it doesn't pop up, click on the gear at the right of the Wifi network 
+4. Depending on your smartphone a webpage will popup, if it doesn't pop up, click on the gear at the right of the Wifi network 
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-gear.png">
 </p>
@@ -28,11 +30,12 @@ This will keep the connection to the plug stable to reach the configuration. Onc
 Also if the plug is connected, and you are not seeing the configuration portal, you can access it through the web browser and the following ip address `192.168.4.1`
 :::
 
-1. The web page will appear, click on "Configure Wifi"
+5. The web page will appear, click on "Configure Wifi"
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-configure.png">
 </p>
-1. Enter the following parameters:
+
+6. Enter the following parameters:
 * Select your Wifi Access Point (SSID) - compulsory
 * Enter your wifi password (Password) - compulsory
 * Enter your mqtt server - compulsory
@@ -48,7 +51,8 @@ The following parameters are optional or can be kept as proposed:
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-parameter.png">
 </p>
-8. Click on Save
+
+7. Click on Save
 
 Once connected properly the gateway LED should be green and blink blue when scanning.
 <p align="left">
@@ -58,5 +62,7 @@ Once connected properly the gateway LED should be green and blink blue when scan
 To use and integrate the plug with an Home Automation Controller you can switch to [OpenMQTTGateway documentation](https://docs.openmqttgateway.com/use/ble.html)
 
 ::: tip
-If you are encountering issue with the plug, you can contact the support at the following email: [florian@theengs.io](mailto:florian@theengs.io)
+To reset the parameters you can do a long button press >30s until your reach a steady orange led. Once done, the Theengs Plug will generate the Wifi configuration portal (step 2).
 :::
+
+If you are encountering issue with the plug, you can contact the support at the following email: [florian@theengs.io](mailto:florian@theengs.io)
