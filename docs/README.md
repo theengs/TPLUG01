@@ -66,3 +66,7 @@ To reset the parameters you can do a long button press >30s until your reach a s
 :::
 
 If you are encountering issue with the plug, you can contact the support at the following email: [florian@theengs.io](mailto:florian@theengs.io)
+
+::: warning
+OpenMQTTGateway has a low power mode that can be triggered by MQTT or by the Home Assistant button, this mode must not be used with the Theengs plug and firmware version 1.3.0.
+:::
