@@ -100,7 +100,7 @@ home/112233445566/GPIOInputtoMQTT
 * BLE Time between scans: 100ms
 * BLE Scan duration: 3000ms
 * Connect to BLE devices deactivated
-* BLE Active scan activated
+* BLE adaptive scan activated
 * Max current that switch Off the relay: 15A
 
 The BLE parameters can be changed with the commands detailed into [BLE gateway usage](https://docs.openmqttgateway.com/use/ble.html).
