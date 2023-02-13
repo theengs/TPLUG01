@@ -117,7 +117,7 @@ Theengs plug can benefit from Over The Air updates following these different met
   * Reconfigure the plug into the Wifi portal
 * From an MQTT command to trigger the download of the firmware from a webserver
   * Connect to your MQTT broker with a client like MQTT Explorer
-  * Publish the udpate command like below (OTAPASSWORD being your oOver The Air password if you changed it during the configuration):
+  * Publish the udpate command like below (OTAPASSWORD being your Over The Air password if you changed it during the configuration):
 ```
 {
   "version": "v1.4.0",
