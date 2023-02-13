@@ -108,5 +108,25 @@ The BLE parameters can be changed with the commands detailed into [BLE gateway u
 ## Updating Theengs Plug
 Theengs plug can benefit from Over The Air updates following these different methods:
 * From the WifiManager portal, by uploading a binary directly to the plug
-* From platformio if the plug is connected to the same Wifi as the programming computer
+  * Download the last version binary named "Theengs-Plug-firmware" from the Github [release page of OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway/releases)
+  * Reset the plug with a long button press
+  * Connect to the Wifi access point with your smartphone
+  * Click Update
+  * Add the binary downloaded previously
+  * Click Update and wait a few minutes until you get "Update successfull"
+  * Reconfigure the plug into the Wifi portal
 * From an MQTT command to trigger the download of the firmware from a webserver
+  * Connect to your MQTT broker with a client like MQTT Explorer
+  * Publish the udpate command like below (OTAPASSWORD being your oOver The Air password if you changed it during the configuration):
+```
+{
+  "version": "v1.4.0",
+  "password": "OTAPASSWORD",
+  "url": "https://github.com/1technophile/OpenMQTTGateway/releases/download/v1.4.0/Theengs-Plug-firmware.bin"
+}
+```
+To this topic (112233445566 being your gateway_name):
+```
+home/112233445566/commands/firmware_update
+```
+  * The plug will restart with the new version
