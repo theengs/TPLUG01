@@ -122,7 +122,7 @@ Theengs plug can benefit from Over The Air updates following these different met
 {
   "version": "v1.4.0",
   "password": "OTAPASSWORD",
-  "url": "https://github.com/1technophile/OpenMQTTGateway/releases/download/v1.4.0/Theengs-Plug-firmware.bin"
+  "url": "https://github.com/1technophile/OpenMQTTGateway/releases/download/v1.4.0/theengs-plug-firmware.bin"
 }
 ```
 To this topic (112233445566 being your gateway_name):
