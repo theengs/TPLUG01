@@ -86,7 +86,7 @@ home/C8F09EB61A44/commands/MQTTtoONOFF
 Switch OFF
 ```
 home/C8F09EB61A44/commands/MQTTtoONOFF
-{"cmd":1}
+{"cmd":0}
 ```
 
 ### Sensor GPIO
