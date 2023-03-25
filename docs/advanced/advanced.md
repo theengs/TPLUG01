@@ -97,11 +97,11 @@ home/112233445566/GPIOInputtoMQTT
 ```
 
 ### Default parameters
-* BLE Time between scans: 100ms
-* BLE Scan duration: 3000ms
+* Adaptive scanning activated (from v1.5.0)
 * Connect to BLE devices deactivated
 * BLE adaptive scan activated
 * Max current that switch Off the relay: 15A
+* Recover relay state upon restart or power outage activated
 
 The BLE parameters can be changed with the commands detailed into [BLE gateway usage](https://docs.openmqttgateway.com/use/ble.html).
 
@@ -120,9 +120,9 @@ Theengs plug can benefit from Over The Air updates following these different met
   * Publish the udpate command like below (OTAPASSWORD being your Over The Air password if you changed it during the configuration):
 ```
 {
-  "version": "v1.4.0",
+  "version": "v1.5.0",
   "password": "OTAPASSWORD",
-  "url": "https://github.com/1technophile/OpenMQTTGateway/releases/download/v1.4.0/theengs-plug-firmware.bin"
+  "url": "https://github.com/1technophile/OpenMQTTGateway/releases/download/v1.5.0/theengs-plug-firmware.bin"
 }
 ```
 To this topic (112233445566 being your gateway_name):
