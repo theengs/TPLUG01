@@ -120,13 +120,19 @@ Theengs plug can benefit from Over The Air updates following these different met
   * Publish the udpate command like below (OTAPASSWORD being your Over The Air password if you changed it during the configuration):
 ```
 {
-  "version": "v1.5.0",
+  "version": "v1.5.1",
   "password": "OTAPASSWORD",
   "url": "https://github.com/1technophile/OpenMQTTGateway/releases/download/v1.5.0/theengs-plug-firmware.bin"
 }
 ```
+or if you have version >= 1.5.0
+```
+{
+  "version": "latest"
+}
+```
 To this topic (112233445566 being your gateway_name):
 ```
-home/112233445566/commands/firmware_update
+home/112233445566/commands/SYStoMQTT/firmware_update
 ```
   * The plug will restart with the new version
