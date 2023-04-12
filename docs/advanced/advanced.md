@@ -1,44 +1,44 @@
-# User guide
+# User Guide
 
-## Led indicator
+## LED Indicator Guide
 
-### Steady orange
-The plug generated an Access Point for onboarding on a network
+### Steady Orange
+The plug is generating an Access Point for network onboarding.
 <p align="left">
   <img src="./../img/Theengs-plug01-orange.png">
 </p>
 
-### Orange 5 seconds, off 5 seconds
-The plug is disconnected from the MQTT broker
+### Orange (5 seconds on, 5 seconds off)
+The plug is disconnected from the MQTT broker.
 
-### Orange 2 seconds, off 2 seconds
-The plug is disconnected from the Wifi broker
+### Orange (2 seconds on, 2 seconds off)
+The plug is disconnected from the WiFi network.
 
-### Steady green
-The plug is connected to the network and MQTT broker
+### Steady Green
+The plug is connected to both the network and the MQTT broker.
 <p align="left">
   <img src="./../img/Theengs-plug01-green.png">
 </p>
 
-### Steady blue
-An update or an operation is in progress
+### Steady Blue
+An update or operation is currently in progress.
 <p align="left">
   <img src="./../img/Theengs-plug01-blue.png">
 </p>
 
-### Flashing blue
-Scan or communication in progress
+### Flashing Blue
+Scanning or communication is in progress.
 
-### Steady red for the power Led
-An overcurrent has been detected. The relay has been switched Off automatically
+### Steady Red (Power LED)
+An overcurrent has been detected, and the relay has been automatically turned off.
 <p align="left">
   <img src="./../img/Theengs-plug01-power-red.png">
 </p>
 
-## Modules and parameters
+## Modules and Parameters
 
-### Home Assistant discovery convention
-The plug publishes its configuration and the detected BLE sensors to the broker following [Home Assistant discovery convention](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery). You will find the devices into Configuration->Devices menu with [Home Assistant](https://docs.openmqttgateway.com/integrate/home_assistant.html)
+### Home Assistant Discovery Convention
+The plug publishes its configuration and detected BLE sensors to the broker following the [Home Assistant discovery convention](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery). You can find the devices in the Configuration->Devices menu with [Home Assistant](https://docs.openmqttgateway.com/integrate/home_assistant.html).
 
 <p align="left">
   <img src="./../img/Theengs-Plug-Settings-HomeAssistant.png">
@@ -49,11 +49,11 @@ The plug publishes its configuration and the detected BLE sensors to the broker 
 </p>
 
 ::: tip
-The Home Assistant convention can also be used by other controllers to leverage automatic discovery.
+Other controllers can also use the Home Assistant convention for automatic discovery.
 :::
 
-### Bluetooth gateway
-These [Bluetooth devices](https://docs.openmqttgateway.com/prerequisites/devices.html#for-ble-devices) will be detected, and their data will be published to the MQTT broker.
+### Bluetooth Gateway
+The plug detects [Bluetooth devices](https://docs.openmqttgateway.com/prerequisites/devices.html#for-ble-devices) and publishes their data to the MQTT broker.
 ```
 home/112233445566/BTtoMQTT/AABBCCDDEEFF
 {"id":"AA:BB:CC:DD:EE:FF","rssi":-88,"brand":"ClearGrass/Qingping","model":"Alarm Clock","model_id":"CGC1/CGD1","tempc":20.3,"tempf":68.54,"hum":55.3,"batt":41}

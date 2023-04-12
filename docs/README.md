@@ -1,72 +1,69 @@
+## All-in-One Smart Plug, Easy Setup Guide
 
-## Smart plug, manufacturer agnostic BLE gateway and energy meter in one device.
+Discover the **Theengs Plug**, a smart plug, BLE gateway, and energy meter in one device. This guide will help you quickly connect your plug to an MQTT broker.
 
-[**Theengs Plug**](https://shop.theengs.io/products/theengs-plug-smart-plug-ble-gateway-and-energy-consumption) connects to an MQTT broker to be controlled and to push Bluetooth Low Energy sensors informations and power consumption. You will find below a quick start guide to have your plug connected to an MQTT broker.
-
-1. Plug the device into an outlet, a steady orange LED will switch ON
+1. **Plug it in**: Plug the device into an outlet. An orange LED will turn on steadily.
 <p align="left">
   <img src="./img/Theengs-plug01-orange.png">
 </p>
 
-2. From your smartphone do a Wifi search and look for a Wifi network starting by `OMG_`
+2. **Connect to WiFi**: On your smartphone, search for a WiFi network starting with `OMG_`.
 <p align="left">
   <img src="./img/Theengs-plug01-wifi.png">
 </p>
 
-3. Click on this network and enter the 8 last digits of the device MAC address, the device MAC address is printed on the side of it.
-Example for a MAC address `409151234678` the Wifi password will be `51234678`
-4. Depending on your smartphone a webpage will popup, if it doesn't pop up, click on the gear at the right of the Wifi network 
+3. **Enter the password**: Click on the network and enter the last 8 digits of the device's MAC address as the password (the MAC address is printed on the side of the device). For example, if the MAC address is `409151234678`, the password will be `51234678`.
+
+4. **Access the setup page**: A webpage may pop up automatically. If not, click on the gear icon next to the WiFi network.
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-gear.png">
 </p>
-1. and click on "Manage router"
+1. Then click on "Manage router".
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-router.png">
 </p>
 
 ::: tip
-If your smartphone disconnects from the plug Wifi network and reconnects automaticaly to your main Wifi, you can click on your main Wifi and choose "forget".
-This will keep the connection to the plug stable to reach the configuration. Once the configuration is done you can reconnect your smartphone to your main Wifi.
-Also if the plug is connected, and you are not seeing the configuration portal, you can access it through the web browser and the following ip address `192.168.4.1`
+If your smartphone disconnects from the plug's WiFi network and reconnects to your main WiFi, "forget" your main WiFi to maintain a stable connection with the plug. After configuration, reconnect to your main WiFi. If the configuration portal doesn't appear, access it at `192.168.4.1` in your web browser.
 :::
 
-5. The web page will appear, click on "Configure Wifi"
+5. **Configure WiFi**: Click on "Configure Wifi".
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-configure.png">
 </p>
 
-6. Enter the following parameters:
-* Select your Wifi Access Point (SSID) - compulsory
-* Enter your wifi password (Password) - compulsory
-* Enter your mqtt server - compulsory
-* Enter your mqtt port - compulsory
+6. **Enter your settings**: Fill in the following required details:
+* Your WiFi Access Point (SSID)
+* Your WiFi password (Password)
+* Your MQTT server
+* Your MQTT port
 
-The following parameters are optional or can be kept as proposed:
-* Enter your mqtt user - optional
-* Enter your mqtt password - optional
-* Select if your broker requires a secure connection, if yes you will need to copy and paste the certificates on the next fields
-* Modify the gateway name if you need
-* Modify the base topic if you need
-* Change the Over The Air (OTA) password if you need
+Optionally, adjust the following settings if needed:
+* MQTT user
+* MQTT password
+* Secure connection and certificates (if required)
+* Gateway name
+* Base topic
+* Over The Air (OTA) password
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-parameter.png">
 </p>
 
-7. Click on Save
+7. **Save**: Click on Save.
 
-Once connected properly the gateway LED should be green and blink blue when scanning.
+When connected, the gateway LED should turn green and blink blue during scanning.
 <p align="left">
   <img src="./img/Theengs-plug01-green.png">
 </p>
 
-To use and integrate the plug with an Home Automation Controller you can switch to [OpenMQTTGateway documentation](https://docs.openmqttgateway.com/use/ble.html)
+For further integration with a Home Automation Controller, refer to the [OpenMQTTGateway documentation](https://docs.openmqttgateway.com/use/ble.html).
 
 ::: tip
-To reset the parameters you can do a long button press >30s until your reach a steady orange led. Once done, the Theengs Plug will generate the Wifi configuration portal (step 2).
+To reset the parameters, press and hold the button for over 30 seconds until the orange LED turns steady. The WiFi configuration portal will then be available (step 2).
 :::
 
-If you are encountering issue with the plug, you can contact the support at the following email: [florian@theengs.io](mailto:florian@theengs.io)
+For assistance or support, email: [florian@theengs.io](mailto:florian@theengs.io).
 
 ::: warning
-OpenMQTTGateway has a low power mode that can be triggered by MQTT or by the Home Assistant button, this mode must not be used with the Theengs plug and firmware version 1.3.0.
+Do not use OpenMQTTGateway's low power mode with Theengs Plug and firmware version 1.3.0.
 :::
