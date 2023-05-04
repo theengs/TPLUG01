@@ -64,6 +64,51 @@ To reset the parameters, press and hold the button for over 30 seconds until the
 
 For assistance or support, email: [florian@theengs.io](mailto:florian@theengs.io).
 
+## Safety Instructions
+When using the Theengs plug, please follow these safety guidelines to ensure proper operation and to prevent potential hazards:
+
+a. Read and follow all instructions provided in this manual before using the Theengs plug.
+
+b. The Theengs plug is designed for indoor use only. Do not use it outdoors or expose it to moisture, excessive heat, or direct sunlight.
+
+c. Ensure that the electrical outlet, where the Theengs plug will be installed, is in good working condition and complies with local electrical codes.
+
+d. Do not use the Theengs plug with devices that exceed its maximum load capacity, as specified in the product specifications.
+
+e. Keep the Theengs plug and connected devices away from water, flammable materials, and sources of ignition.
+
+f. Unplug the Theengs plug from the wall outlet before cleaning or performing any maintenance. Use a dry cloth to clean the Theengs plug, and avoid using harsh chemicals or abrasive materials.
+
+g. Do not attempt to disassemble, repair, or modify the Theengs plug. Doing so may cause damage, void the warranty, and potentially create safety hazards.
+
+h. In the event of a malfunction or suspected problem with the Theengs plug, unplug it immediately and contact customer support for assistance.
+
+i. Keep the Theengs plug and its packaging materials out of reach of children and pets to avoid the risk of choking or injury.
+
+j. Avoid using the Theengs plug with devices sensitive to power cycling or restarts, as unexpected interruptions in power supply may cause damage or malfunctions in such devices.
+
+## Specifications
+|Characteristic|Value or range|
+|-|-|
+|Power Supply|100-120VAC 60Hz|
+|Max current|15A|
+|Microcontroller|ESP32|
+|WiFi Band|2.4 GHz|
+|Protocol|MQTT|
+|Operating Humidity|0%～95% (No condensation)|
+|Operating Temperature| 0 ºC ~ 40 ºC / 32F ~ 104F|
+|Storage Temperature| -10°C ~ 50°C / 14F ~ 122F|
+|Dimensions	|103mm * 34.6mm * 61mm/4.05in * 1.37in * 2.4in|
+|Usage| Indoor use only|
+|Certification| UL Listed hardware E 60730-1|
+
+## Warranty
+The Theengs Plug hardware warranty is one year from the date of purchase. See details [here](https://shop.theengs.io/pages/limited-product-warranty)
+
+The plug is delivered with firmware developed under [GPLv3 license](https://github.com/1technophile/OpenMQTTGateway/blob/development/LICENSE.txt), by using it, you accept the terms and conditions of this license.
+
+## Miscellaneous
+
 ::: warning
 Do not use OpenMQTTGateway's low power mode with Theengs Plug and firmware version 1.3.0.
 :::
